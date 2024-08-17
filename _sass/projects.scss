@@ -1,0 +1,60 @@
+.projects {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Adjust the spacing between grid items */
+  }
+
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card {
+    border: 1px solid #ccc; /* Optional border for each card */
+    border-radius: 4px;     /* Optional: Rounded corners */
+    overflow: hidden;       /* Ensure content stays within the border */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+
+    img {
+      width:100%;
+      height: auto; /* Make the height flexible */
+      object-fit: cover; /* Ensure the image covers the entire top of the card */
+      display: block;
+      margin: 0; /* Remove any default margin */
+      padding: 0; /* Remove any default padding */
+    }
+
+    .card-body {
+      padding: 10px; /* Adjust padding as needed */
+      flex-grow: 1;
+
+      .card-title {
+        margin-top: 10px; /* Provide space between the image and title */
+        margin-bottom: 10px; /* Adjust bottom margin for consistency */
+      }
+
+      .card-text {
+        margin-bottom: 0; /* Remove bottom margin to reduce gap */
+      }
+    }
+  }
+}
+
+.github-stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.github-stat-img {
+  max-width: 45%;
+  height: auto;
+}

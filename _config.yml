@@ -1,0 +1,29 @@
+# Example Site settings
+
+url: 'https://omkar-334.github.io/' # your main domain
+baseurl: '' # if you're using custom domain keep this blank example: baseurl: ''
+
+
+#google_analytics: UA-NNNNNNNN-N
+
+header_pages:
+  - index.md
+  - pages/projects.md
+  - pages/blog.md
+  - pages/cv.md
+  - pages/findme.md
+
+footer: '© Copyright 2024 Omkar Kabde. Powered by Jekyll and Ruby'
+
+markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: true
+
+plugins:
+  - jekyll-seo-tag
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
