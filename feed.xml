@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://omkar-334.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://omkar-334.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-10-18T22:40:58+05:30</updated><id>https://omkar-334.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">GSoC Blog</title><link href="https://omkar-334.github.io/blog/2024/GSocBlog/" rel="alternate" type="text/html" title="GSoC Blog" /><published>2024-08-27T00:00:00+05:30</published><updated>2024-08-27T00:00:00+05:30</updated><id>https://omkar-334.github.io/blog/2024/GSocBlog</id><content type="html" xml:base="https://omkar-334.github.io/blog/2024/GSocBlog/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">GSoC Final Report</title><link href="https://omkar-334.github.io/blog/2024/GSoCReport/" rel="alternate" type="text/html" title="GSoC Final Report" /><published>2024-08-26T00:00:00+05:30</published><updated>2024-08-26T00:00:00+05:30</updated><id>https://omkar-334.github.io/blog/2024/GSoCReport</id><content type="html" xml:base="https://omkar-334.github.io/blog/2024/GSoCReport/"><![CDATA[<p>This serves as the final evaluation report for GSoC 2024.
+My project for GSoC 2024 is <a href="https://summerofcode.withgoogle.com/programs/2024/projects/VxCwfSg0">STOFS Subsetting Tool</a>.</p>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>Before GSoC 24, subsetting xarray datasets was done using either thalassa or ugrid. This method of subsetting was not uniform and sometimes problematic for Stofs-3d (SCHISM) datasets. This project aimed to develop a standard subsetting tool for both ADCIRC and SCHISM datasets, which would improve data accessibility.</p>
+
+<h2 id="contribution">Contribution</h2>
+
+<p>Over the course of this project, I’ve added support for subsetting STOFS-2D and STOFS-3D datasets, including other dataset formats. I have added example notebooks, example datasets and a comprehensive documentation for the subsetting tool. Towards the end, I’ve helped in developing a reusable selector for the subsetting tool and testing as well.</p>
+
+<p>For detailed contribution, please refer below.</p>
+
+<h3 id="issues">Issues</h3>
+<ul>
+  <li><a href="https://github.com/asascience-open/xarray-subset-grid/issues/2">Unclosed array</a></li>
+  <li><a href="https://github.com/asascience-open/xarray-subset-grid/issues/3">Example notebooks - Add STOFS dataset</a></li>
+  <li><a href="https://github.com/asascience-open/xarray-subset-grid/issues/8">Add SCHISM compatibility</a></li>
+  <li><a href="https://github.com/asascience-open/xarray-subset-grid/issues/9">Add ADCIRC compatibility</a></li>
+  <li><a href="https://github.com/asascience-open/xarray-subset-grid/issues/10">Add documentation build and website</a></li>
+  <li><a href="https://github.com/asascience-open/xarray-subset-grid/issues/13">Add contribution guide</a></li>
+  <li><a href="https://github.com/asascience-open/xarray-subset-grid/issues/14">Add benchmark examples</a></li>
+  <li><a href="https://github.com/asascience-open/xarray-subset-grid/issues/14">We need test datasets / files!</a></li>
+  <li><a href="https://github.com/asascience-open/xarray-subset-grid/issues/15">Add examples for subsetting STOFS output</a></li>
+  <li><a href="https://github.com/asascience-open/xarray-subset-grid/issues/16">Add examples for subsetting STOFS outputs</a></li>
+  <li><a href="https://github.com/asascience-open/xarray-subset-grid/issues/58">Documentation setup</a></li>
+  <li><a href="https://github.com/asascience-open/xarray-subset-grid/issues/59">Reuse selector</a></li>
+</ul>
+
+<h3 id="pull-requests">Pull Requests</h3>
+
+<ul>
+  <li>Merged - <a href="https://github.com/asascience-open/xarray-subset-grid/pull/1">Fixed unclosed array</a></li>
+  <li>Closed - <a href="https://github.com/asascience-open/xarray-subset-grid/pull/21">Update xarray version to 2023.10 and add support for Python 3.9</a></li>
+  <li>Reviewed - <a href="https://github.com/asascience-open/xarray-subset-grid/pull/31">Stofs 2D support</a></li>
+  <li>Merged - <a href="https://github.com/asascience-open/xarray-subset-grid/pull/56">Add contribution guide, benchmarks and datasets</a></li>
+  <li>Merged - <a href="https://github.com/asascience-open/xarray-subset-grid/pull/56">Documentation</a></li>
+  <li>Merged - <a href="https://github.com/asascience-open/xarray-subset-grid/pull/57">add ‘anon’ parameter and update stofs-2d link</a></li>
+  <li>Open - <a href="https://github.com/asascience-open/xarray-subset-grid/pull/60">Reuse selector</a></li>
+</ul>
+
+<h2 id="after-gsoc">After GSoC</h2>
+
+<p>For now, xarray-subset-grid can be installed from souce using <code class="language-plaintext highlighter-rouge">pip</code>. It could be released as a PyPI package depending on the future maintainer of the project. Providing xarray-subset-grid as a web-api is also one of the goals. The Selector class could be improved further and integrated with fsspec, if needed.
+I can help in maintenance of the project for further support and issues.</p>
+
+<h2 id="acknowledgement">Acknowledgement</h2>
+<p>I want to express my deep gratitude to my mentors - <a href="https://github.com/AtiehAlipour-NOAA">Atieh</a>, <a href="https://github.com/mpiannucci">Matt</a>, <a href="https://github.com/ChrisBarker-NOAA">Chris</a> and <a href="https://github.com/SorooshMani-NOAA">Soroosh</a>.They all gave me assistance, guidance and inspiration during the past few months.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[This serves as the final evaluation report for GSoC 2024. My project for GSoC 2024 is STOFS Subsetting Tool.]]></summary></entry><entry><title type="html">Google Summer of Code</title><link href="https://omkar-334.github.io/blog/2024/GSoC/" rel="alternate" type="text/html" title="Google Summer of Code" /><published>2024-05-02T00:00:00+05:30</published><updated>2024-05-02T00:00:00+05:30</updated><id>https://omkar-334.github.io/blog/2024/GSoC</id><content type="html" xml:base="https://omkar-334.github.io/blog/2024/GSoC/"><![CDATA[<h2 id="introduction">Introduction</h2>
+
+<p>Google Summer of Code, often abbreviated to GSoC, is an international annual program in which Google awards stipends to students who successfully complete a free and open-source software coding project during the summer.</p>
+
+<p>The process is quite simple, you browse organisations and select the ones that you want to work with. You join their community channels (slack, irc, gitter, mailing lists, etc), introduce yourself, work on some stuff, solve bugs or issues, make pull requests and when the time comes, send your proposal for the project you want to work on, and until the result arrives, you get familiar with the codebase of the project related repository.</p>
+
+<h2 id="how-i-did-it">How I did it</h2>
+
+<p>I had filtered the organizations by language and domain. I was looking for projects in Python, R, Machine Learning and Data Science. I had shortlisted a few organizations, namely <a href="https://summerofcode.withgoogle.com/programs/2024/organizations/synfig">Synfig</a>, <a href="https://summerofcode.withgoogle.com/programs/2024/organizations/uc-ospo">UC OSPO</a>, <a href="https://summerofcode.withgoogle.com/programs/2024/organizations/c2si">C2SI</a>, and the <a href="https://summerofcode.withgoogle.com/programs/2024/organizations/wikimedia-foundation-nd">Wikimedia Foundation</a>. I was now filtering through them one by one, interacting with mentors and getting familiar with the projects. However, I felt like I wasn’t making any progress overall. I was on the search again and now I had found <a href="https://summerofcode.withgoogle.com/programs/2024/organizations/wikimedia-foundation-nd">Internet Archive</a> and <a href="https://summerofcode.withgoogle.com/programs/2024/organizations/ioos">IOOS</a>. The mentors over at IOOS were really supportive and interactive. I knew little of this project but I learnt a lot over time. This sealed the deal and IOOS was the only organization I had applied to.</p>
+
+<h2 id="writing-the-proposal">Writing the Proposal</h2>
+
+<p>I had gone through previous proposals at IOOS and other organizations as well for inspiration. Try to be concise and honest about your preferences, schedule, availability and experiences in your proposal. I had made a draft and got my mentors to review it. After a lot of good suggestions, it was finally ready. View it here - <a href="/assets/pdfs/GSoC_Proposal.pdf">PDF</a></p>
+
+<p>My proposal format -</p>
+<ol>
+  <li>Abstract</li>
+  <li>Why this project?</li>
+  <li>Technical Details</li>
+  <li>References</li>
+  <li>Development Experience</li>
+  <li>Schedule</li>
+  <li>Additional Background</li>
+  <li>Appendix</li>
+</ol>
+
+<h2 id="results">Results</h2>
+
+<p>The results were out on May 2nd and my proposal to IOOS got accepted! <br />
+Here is my <a href="/assets/pdfs/GSoC_Acceptance.pdf">acceptance letter</a>. <br />
+Here is my <a href="https://summerofcode.withgoogle.com/programs/2024/projects/VxCwfSg0">project description</a>.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Introduction]]></summary></entry></feed>
